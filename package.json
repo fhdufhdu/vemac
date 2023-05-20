@@ -1,0 +1,40 @@
+{
+  "name": "vemac",
+  "version": "1.0.0",
+  "description": "velog editor macro",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx webpack --watch",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhdufhdu/vemac.git"
+  },
+  "author": "lucas.ws",
+  "bugs": {
+    "url": "https://github.com/fhdufhdu/vemac/issues"
+  },
+  "homepage": "https://github.com/fhdufhdu/vemac#readme",
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "html-webpack-plugin": "^5.5.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
