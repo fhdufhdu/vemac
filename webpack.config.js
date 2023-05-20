@@ -7,7 +7,7 @@ const htmlDir = path.join(srcDir, "html");
 const distDir = path.join(__dirname, "dist");
 
 module.exports = {
-  mode: "development",
+  mode: "none",
   entry: {
     addImageBtn: path.join(scriptDir, "add-image-button.js"),
   },
