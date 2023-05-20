@@ -12,5 +12,8 @@
       ]
     }
   ],
+  "action": {
+    "default_popup": "dist/html/options.html"
+  },
   "options_page":"dist/html/options.html"
 }
