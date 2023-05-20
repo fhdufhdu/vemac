@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "VEIMG",
+  "version": "1.0",
+  "description": "벨로그에 이미지 삽입을 쉽게 해주는 버튼을 추가합니다!",
+  "content_scripts": [
+    {
+      "js": ["scripts/add-image-button.js"],
+      "matches": [
+        "https://velog.io/write?id=*",
+        "https://velog.io/write"
+      ]
+    }
+  ]
+}
