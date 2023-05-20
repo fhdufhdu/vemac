@@ -5,7 +5,7 @@
   "description": "벨로그에 이미지 삽입을 쉽게 해주는 버튼을 추가합니다!",
   "content_scripts": [
     {
-      "js": ["dist/scripts/addImageBtn.js"],
+      "js": ["dist/addImageBtn.js"],
       "matches": [
         "https://velog.io/write?id=*",
         "https://velog.io/write"
@@ -13,7 +13,7 @@
     }
   ],
   "action": {
-    "default_popup": "dist/html/options.html"
+    "default_popup": "dist/popup.html"
   },
-  "options_page":"dist/html/options.html"
+  "options_page":"dist/setting.html"
 }
