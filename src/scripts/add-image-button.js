@@ -12,7 +12,7 @@ toolbarDiv.appendChild(imgBtn);
 
 imgBtn.addEventListener("click", (event) => {
   const data =
-    '<p align="center">\n\t<img src="" alt="" width="100%" />\n\t캡션 입력\n</p>';
+    '<p align="center">\n\t<img src="" alt="" width="100%" />\n\t캡션 입력\n</p>\n';
   navigator.clipboard
     .writeText(data)
     .then(() => {
