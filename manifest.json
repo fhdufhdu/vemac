@@ -15,5 +15,11 @@
   "action": {
     "default_popup": "dist/popup.html"
   },
-  "options_page":"dist/setting.html"
+  "options_page":"dist/setting.html",
+  "icons": {
+    "16": "dist/logo/icon-16.png",
+    "32": "dist/logo/icon-32.png",
+    "48": "dist/logo/icon-48.png",
+    "128": "dist/logo/icon-128.png"
+  }
 }

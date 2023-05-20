@@ -1,4 +1,9 @@
-const toolbarDiv = document.querySelector("#toolbar");
+let toolbarDiv = null;
+
+while (!toolbarDiv) {
+  toolbarDiv = document.querySelector("#toolbar");
+  console.log(toolbarDiv);
+}
 
 const imgBtn = document.createElement("button");
 imgBtn.className = "sc-eLwHnm hAZWeI";

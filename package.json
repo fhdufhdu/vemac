@@ -4,7 +4,7 @@
   "description": "velog editor macro",
   "main": "app.js",
   "scripts": {
-    "build": "npx webpack --watch",
+    "build": "cp -r ./src/logo ./dist & npx webpack --watch",
     "prepare": "husky install"
   },
   "repository": {
