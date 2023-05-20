@@ -55,6 +55,19 @@ module.exports = {
           presets: ["@babel/preset-env", "@babel/preset-react"],
         },
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.svg|png|jpg|gif$/,
+        type: "asset/inline",
+        parser: {
+          dataUrlCondition: {
+            maxSize: 20 * 1024, // 1kb가 1024byte 이기 때문에 20kb를 원한다면 1024에 20을 곱합니다.
+          },
+        },
+      },
     ],
   },
   devtool: "inline-source-map",
