@@ -1,0 +1,50 @@
+{
+  "name": "vemac",
+  "version": "1.0.0",
+  "description": "velog editor macro",
+  "main": "app.js",
+  "scripts": {
+    "build": "cp -r ./src/logo ./dist & npx webpack --watch",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhdufhdu/vemac.git"
+  },
+  "author": "lucas.ws",
+  "bugs": {
+    "url": "https://github.com/fhdufhdu/vemac/issues"
+  },
+  "homepage": "https://github.com/fhdufhdu/vemac#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "html-webpack-plugin": "^5.5.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+    "css-loader": "^6.7.4",
+    "eslint-plugin-react": "^7.32.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.10"
+  }
+}
