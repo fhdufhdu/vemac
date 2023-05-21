@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    webextensions: true,
   },
   extends: [
     "standard",
@@ -14,5 +15,12 @@ module.exports = {
     sourceType: "module",
   },
   ignorePatterns: ["**/dist/**/*.js"],
-  rules: {},
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
+  },
 };
