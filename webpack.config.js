@@ -28,7 +28,7 @@ module.exports = {
   entry: {
     setting: path.join(reactDir, "setting-index.js"),
     popup: path.join(reactDir, "popup-index.js"),
-    addImageBtn: path.join(scriptDir, "add-image-button.js"),
+    addBtn: path.join(scriptDir, "add-button.js"),
   },
   output: {
     path: path.join(distDir),
