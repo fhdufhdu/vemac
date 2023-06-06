@@ -26,8 +26,8 @@ String.prototype.format = function () {
 module.exports = {
   mode: "development",
   entry: {
-    setting: path.join(reactDir, "setting-index.js"),
-    popup: path.join(reactDir, "popup-index.js"),
+    setting: path.join(reactDir, "setting-index.tsx"),
+    popup: path.join(reactDir, "popup-index.tsx"),
     addBtn: path.join(scriptDir, "add-button.js"),
   },
   output: {
@@ -54,6 +54,10 @@ module.exports = {
         options: {
           presets: ["@babel/preset-env", "@babel/preset-react"],
         },
+      },
+      {
+        test: /\.tsx?$/,
+        use: ["babel-loader", "ts-loader"],
       },
       {
         test: /\.css$/,
