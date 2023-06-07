@@ -16,7 +16,8 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  ignorePatterns: ["**/dist/**/*.js"],
+  // ignorePatterns: ["**/dist/**/*.js"],
+  // eslintIgnore: ["webapck.config.js"],
   rules: {
     "prettier/prettier": [
       "error",
