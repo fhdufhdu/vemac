@@ -4,10 +4,12 @@ module.exports = {
     es2021: true,
     webextensions: true,
   },
+  parser: "@typescript-eslint/parser",
   extends: [
     "standard",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
   ],
   overrides: [],
   parserOptions: {
@@ -23,5 +25,7 @@ module.exports = {
       },
     ],
     "react/prop-types": 0,
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
   },
 };

@@ -16,7 +16,7 @@ for (const macro of macroList) {
   imgBtn.innerHTML = `<p style="font-size: 0.4em;">${macro.name}</p>`;
   toolbarDiv.appendChild(imgBtn);
 
-  imgBtn.addEventListener("click", (event) => {
+  imgBtn.addEventListener("click", () => {
     const data = macro.data;
     navigator.clipboard
       .writeText(data)
